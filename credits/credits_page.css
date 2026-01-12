@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #181818;
+    color: #eeeeee;
+    width: 100vw;
+    min-width: 1000px;
+    height: 100vh;
+
+    overflow-y: hidden;
+}
+    #slideshow{
+    text-align: center;
+    padding: 1rem;
+    border: 1rem blacks solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    position: relative;
+
+    animation-name: slideUp;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    }
+
+header{
+    margin: 1rem;
+}
+
+article{
+    margin: 1rem;
+    width: 30%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+    position: relative;
+
+    display: block;
+
+    padding: 1rem;
+}
+
+article *{
+    flex-wrap: wrap;
+}
+footer{
+    margin: 1rem;
+}
+
+.divider{
+    height: 10rem;
+}
+
+.special{
+    color: yellow;
+    font-weight: bolder;
+}
+.line{
+    width: 100%;
+    border: 1px white solid;
+}
+
+#exit-btn{
+    position: fixed;
+    right: 0;
+    text-decoration: none;
+    color: white;
+    margin: 1.5rem;
+    font-size: 2rem;
+    opacity: 50%;
+    z-index: 2;
+    
+    transition: all 500ms ease-in-out;
+}
+
+#exit-btn:hover{
+    opacity: 100%;
+}
+
+@keyframes slideUp{
+     0%{
+        transform: translateY(0%);
+     }  
+     100%{
+        transform: translateY(-75%);
+     }   
+    }

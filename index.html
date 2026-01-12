@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home/tapspeed_home.css" />
+    <title>TapSpeed Home Page</title>
+  </head>
+  <body>
+    <main id="home-screen">
+      <span id="title">
+        <h1>Tap<span class="changing-color">Speed</span></h1>
+        <h2>"Test your limit!"</h2>
+      </span>
+      <fieldset id="difficulty-container" class="small-padding">
+        <legend>Set Difficulty</legend>
+        <span class="difficulty-box" id="easy-box">
+          <input
+            type="radio"
+            id="easyDifficulty"
+            name="difficulty_level"
+            value="easy"
+          />
+          <label for="easyDifficulty">Easy</label>
+        </span>
+        <span class="difficulty-box" id="normal-box">
+          <input
+            type="radio"
+            id="normalDifficulty"
+            name="difficulty_level"
+            value="normal"
+          />
+          <label for="normalDifficulty">Normal</label>
+        </span>
+        <span class="difficulty-box" id="hard-box">
+          <input
+            type="radio"
+            id="hardDifficulty"
+            name="difficulty_level"
+            value="hard"
+          />
+          <label for="hardDifficulty">Hard</label>
+        </span>
+      </fieldset>
+      <button id="start-button">Start</button>
+    </main>
+  </body>
+  <script src="home/tapspeed_home.js"></script>
+</html>
